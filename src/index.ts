@@ -1,7 +1,7 @@
 import path from 'path';
 import { selectAll } from 'unist-util-select';
 import { defaults, isString, find } from 'lodash';
-import cheerio from 'cheerio';
+import * as cheerio from "cheerio";
 import { slash } from './utils';
 
 export type GatsbyNodePluginArgs = {
